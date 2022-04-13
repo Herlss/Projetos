@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo/style.css">
+    <link rel="shortcut icon" href="imagens/favlivrocaio.ico" type="image/x-icon">
+    <title>Template</title>
+</head>
+<body>
+    
+<header>
+    <a href="index.html"><img src="imagens/logo-template.png" alt="" id="logotemplate"></a>
+
+    <div class="topnav">
+        <h1 id="titletop">Encontre os melhores livros do mercado atual no Template!!</h1>
+        <input type="text" placeholder="Digite o nome do livro aqui!" name="search">
+        <button type="submit">Procurar</button>
+    </div>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="" id="home" class="active">Home</a></li>
+        <li><a href="" id="rec">Recomendados</a></li>
+        <li><a href="" id="parceiros">Parceiros</a></li>
+        <li><a href="" id="suporte">Suporte</a></li>
+    </ul>
+</nav>
+
+<div id="adscontainer">
+    <img src="imagens/ads-livros.jpg" alt="" id="ads">
+</div>
+
+<input type="button" value="Mudar" onclick="mudarImagem()" id="botaoMudar">
+
+<main>
+    <article id="maisvendidos">
+        <div     id="titulomaisvendidos">
+            <h2 style="text-align: center; margin-bottom: 10px;"><ins>Conheça nossos livros mais vendidos</ins></h2>
+        </div>
+
+        <div id="maisvendidosdiv">
+            <div class="bookcontainer">
+                <a href="https://www.amazon.com.br/di%C3%A1rio-Anne-Frank/dp/8501044458/ref=sr_1_4?crid=1D5EPAQ8TRPB7&keywords=anne+frank+livro&qid=1647461167&s=books&sprefix=anne+frank%2Cstripbooks%2C179&sr=1-4&ufe=app_do%3Aamzn1.fos.6d798eae-cadf-45de-946a-f477d47705b9" target="_blank"><img src="covers/anne-cover.jpg" alt="" id="annefrank" class="covers"></a>
+                <img src="imagens/readbookicon.png" alt="" class="hide">
+                <h3 class="livronome"><strong>O diário de Anne Frank</strong></h3>
+                <p class="autores">Anne Frank</p>
+            </div>
+
+            <div class="bookcontainer">
+                <a href="https://www.amazon.com.br/Harry-Potter-Pedra-Filosofal-Rowling/dp/8532530788/ref=asc_df_8532530788/?tag=googleshopp00-20&linkCode=df0&hvadid=379795242161&hvpos=&hvnetw=g&hvrand=18165490899750427151&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1001773&hvtargid=pla-569630960550&psc=1" target="_blank"><img src="covers/harry-cover.jpg" alt="" id="harrypotter" class="covers"></a>
+                <img src="imagens/readbookicon.png" alt="" class="hide">
+                <h3 class="livronome"><strong>Harry Potter e a pedra filosofal</strong></h3>
+                <p class="autores">J.K Rowling</p>
+            </div>
+
+            <div class="bookcontainer">
+                <a href="https://www.amazon.com.br/Ladr%C3%A3o-Raios-S%C3%A9rie-Jackson-Olimpianos/dp/8580575397/ref=sr_1_2?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=E5PI1XZEHQB2&keywords=percy+jackson&qid=1647461225&s=books&sprefix=percy+jackson+%2Cstripbooks%2C174&sr=1-2" target="_blank"><img src="covers/percy-cover.jpg" alt="" class="covers"></a>
+                <img src="imagens/readbookicon.png" alt="" class="hide">
+                <h3 class="livronome"><strong>Percy Jackson e o ladrão de raios</strong></h3>
+                <p class="autores">Rick Riordan</p>
+            </div>
+        </div>
+    </article>
+</main>    
+
+<footer>
+    <p><strong>Site por <a href="https://github.com/Herlss" target="_blank" class="externo">Herls</a></strong></p>
+</footer>
+
+<script src="script.js">
+</script>
+
+</body>
+</html>

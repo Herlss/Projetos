@@ -1,0 +1,319 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* importando uma fonte externa */
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Staatliches&display=swap');
+
+/* mudando a cor do body */
+body {
+
+background-color: rgb(155, 155, 153);
+
+}
+
+/* bloco que aplica o css no header */
+header {
+    min-height: 150px;
+    text-align: center;
+    padding-top: 40px;
+    width: 85%;
+    height: 100px;
+    margin: auto;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.199);
+    background-image: url(https://images.pexels.com/photos/904616/pexels-photo-904616.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background-size: 1200px;
+    background-position-y: -500px;
+}
+
+/* bloco que aplica o css na imagem que representa a logo do site */
+img#logotemplate {
+    position: absolute;
+    left: 105px;
+    top: 5px;
+    height: 95.43px;
+    width: 170px;
+}   
+
+/* bloco que aplica css no h1 principal do header */
+h1#titletop {
+    font-style: bold;
+    font-size: 1.4em;
+    position: relative;
+    margin: 0;
+    top: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgba(161, 159, 159, 0.534);
+    width: 700px;
+    margin: auto;
+    border-radius: 2px;
+}
+
+/* bloco que aplica o css na nav */
+nav {
+    width: 50%;
+    background-color: rgb(99, 100, 100);
+    padding: 15px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.199);
+    font-weight: bold;
+    border-top: 2px;
+    border-color: black;
+    margin: auto;
+    border-top: 0;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition-duration: 0.5s;
+}
+
+li a:hover {
+    background-color: #111;
+    box-shadow: 0 0 3px black, 0 0 5px gray;
+}
+
+li a.active {
+    background-color: #04AA6D;
+}
+
+/* bloco que aplica o css nos links da nav */
+nav > a {
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 2px;
+    font-size: 0.8;
+}
+
+/* bloco que aplica css quando o mouse passa nos links da nav */
+nav > a:hover {
+    border-bottom: solid;
+    border-width: 3px;
+    border-color: black;
+    border-radius: 0;
+}
+
+/* bloco que aplica o css no link da página que você está agora */
+nav > a.active {
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 2px;
+}
+
+/* bloco que aplica o css no article do main */
+article#maisvendidos {
+    background-color: white;
+    min-width: 300px;
+    max-width: 1000px;
+    height: 1000px;
+    margin: auto;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.411);
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+#maisvendidosdiv{
+    display: flex;
+    justify-content: center;
+}
+
+div#titulomaisvendidos {
+    color: black;
+    width: 500px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+/* esse bloco aplica o css nas imagens capas dos livros */
+img.covers {
+    width: 250px    ;
+    height: 350px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.300);
+    margin-top: 10px;
+    float: left;
+    margin: 10px;
+    display: relative;
+    margin: auto;
+}
+
+img.covers:hover {
+    opacity: 0.8;
+    transition-duration: 0.4s;
+}
+
+/* este bloco serve pra deixar o texto com nome do livro e autor debaixo da imagem */
+.bookcontainer{
+    text-align:center;
+    display:block;
+    background-color: transparent;
+    border: 1px solid transparent;
+    margin-right: 10px;
+    margin-bottom: 1px;
+    float:left;
+    position: relative;
+    width: 250px;
+    height: 350px;
+}
+
+.hide {
+    height: 70px;
+    width: 70px;
+    position: absolute;
+    opacity: 0;
+    left: 92px;
+    bottom: 140px;
+}
+
+.hide:hover {
+    opacity: 1;
+}
+
+/* bloco contendo o footer */
+footer {
+    background-color:rgb(240, 240, 92);
+    color: black;
+    text-align: center;
+    font-size: 0.8em;
+    padding: 0.5px;
+    width: 30%;
+    height: 30px;
+    margin: auto;
+    display: block;
+    border-radius: 12px;
+    margin-bottom: 10px;
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.700);
+}   
+
+/* tira a decoração de links da class externo */
+a.externo{
+    text-decoration: none;
+}
+
+/* coloca um emote de clip em todos os links da class externo */
+a.externo::before {
+    content: '\1F517';
+}
+
+/* aplica o css em links externos quando o mouse passa por cima */
+a.externo:hover {
+    text-decoration: underline;
+    color: red;
+}
+
+/* aplica o css na div de ads */
+div#adscontainer {
+    width: 1000px;
+    height: 180px;
+    background-color: black;
+    margin: auto;
+    margin-bottom: 20px;
+    margin-top: 45px;
+}
+
+/* aplica o css no input para mudar as imagens */
+input#botaoMudar {
+    margin: auto;
+    display: block;
+    margin-bottom: 20px;
+    padding: 6px;
+}
+
+/* aplica o css no botão de pesquisar da nav */
+.topnav button {
+    font-size: 17px;
+    border: 1px solid black;
+    border-radius: 4px;
+    margin: auto;
+    position: relative;
+    top: 50px;
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* aplica o css no input de search da nav */
+.topnav input[type=text] {
+    padding: 12px 20px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: 3px solid rgba(85, 85, 85, 0.096);
+    border-radius: 20px;
+    position: relative;
+    width: 300px;
+    margin: auto;
+    top: 50px;
+    outline: none;
+    transition-duration: 0.5s;
+    /* adicionando a imagem de lupa */
+    background-image: url(/imagens/searchicon.png);
+    background-position: 9px 10px;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    padding-left: 40px;
+}
+
+.topnav input[type=text]:focus {
+    border: 3px solid black;
+    outline: none;
+}
+
+/* aplica o css quando o mouse passa por cima do botão da nav */
+.topnav button:hover {
+    background: #047a4f;
+}
+
+/* aplica o css quando o botão da nav é ativado (click/hold) */
+.topnav button:active {
+    background-color: rgba(255, 255, 255, 0.178);
+}
+
+/* aplica o css na div topnav */
+.topnav {
+    overflow: hidden;
+    min-height: 130px;
+    min-width: 550px;
+    margin: auto;
+    position: relative;
+    top: 10px;
+}
+
+img#menuicon {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    right: 650px;
+    bottom: 160px;
+    margin-left: 40px;
+}
+
+  
+

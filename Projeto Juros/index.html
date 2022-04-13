@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imagens/Designcontest-Ecommerce-Business-Dollar.ico" type="image/x-icon">
+</head>
+<body>
+    <div id="site-content">
+        <div id="inputdiv">
+            <h1>Calculadora juros compostos</h1>
+        
+            <h2>Quantos meses</h2>
+            <input type="number" name="qntmeses" id="qntMeses" class="inputcalc" placeholder="Digite aqui...">
+        
+            <h2>Taxa por mês</h2>
+            <input type="number" name="qntporcentagem" id="qntPorcentagem" class="inputcalc" placeholder="Digite aqui...">
+        
+            <h2>Valor inicial</h2>
+            <input type="number" name="qntinicial" id="qntInicial" class="inputcalc" placeholder="Digite aqui...">
+        
+            <h2>Valor mensal</h2>
+            <input type="number" name="qntmensal" id="qntMensal" class="inputcalc" placeholder="Digite aqui...">
+        
+            <br>
+            <input type="button" value="Calcular" onclick="cal()" id="inputCalcular">
+        </div>
+
+        <div id="result">
+            <p>Resultado</p>
+        </div>
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>
