@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grades</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Mudar a célula de cor de acordo com a aula atual -->
+
+    <div id="site-wrapper">
+        <div id="time-wrapper">
+            <h1 id="time"  class="info-wrapper">
+                <strong></strong>
+            </h1>
+
+            <div id="date-wrapper">
+                <h1 id="date" class="info-wrapper">
+                    <strong></strong>
+                </h1>
+            </div>
+
+            <div id="button-wrapper">
+                <button onclick="showGrade()" id="showBtn" ondblclick="unShowGrade()">
+                    <p>Ver Horários</p>
+                </button>
+            </div>
+        </div>
+
+        <div id="grade-wrapper">
+            <div id="grade">
+                <h1 id="weekday" class="info-wrapper">
+                    <strong>Lorem, ipsum.</strong>
+                </h1>
+                <table>  
+                    <thead>
+                        <tr class="titletr">
+                            <td class="titletd"><h2>Matéria</h2></td>
+                            <td class="titletd"><h2>Horário</h2></td>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>
+                                <h3 id="mate1">DAD</h3>
+                            </td>
+                            <td>
+                                <h3>13:50 - 14:35</h3>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <h3 class="matCel">DAD</h3>
+                            </td>
+                            <td>
+                                <h3>14:35 - 15:20</h3>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <h3 class="matCel">DAD</h3>
+                            </td>
+                            <td>
+                                <h3>15:20 - 16:05</h3>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="pausetd">
+                                <h3>Intervalo</h3>
+                            </td>
+                            <td class="pausetd">
+                                <h3>16:05 - 16:25</h3>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <h3>Matemática</h3>
+                            </td>
+                            <td>
+                                <h3>16:25 - 17:10</h3>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <h3>Português</h3>
+                            </td>
+                            <td>
+                                <h3>17:10 - 17:50</h3>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <h3>Português</h3>
+                            </td>
+                            <td>
+                                <h3>17:50 - 18:30</h3>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="pausetd">
+                                <h3>Jantar</h3>
+                            </td>
+                            <td class="pausetd">
+                                <h3>18:30 - 19:10</h3>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <h3>Inglês</h3>
+                            </td>
+                            <td>
+                                <h3>19:10 - 19:50</h3>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <h3>Inglês</h3>
+                            </td>
+                            <td>
+                                <h3>19:50 - 20:30</h3>
+                            </td>
+                        </tr>
+
+                        <tr class="opttr">
+                            <td>
+                                <h3></h3>
+                            </td>
+                            <td>
+                                <h3></h3>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>    
+            </div>
+        </div>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
